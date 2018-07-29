@@ -1,0 +1,24 @@
+<wicket:panel>
+	<h4>A sample List View</h4>
+	<hr />
+	<table border = "1" wicket:id="serviceContainer">
+		<tr>
+			<th>Service ID</th>
+			<th>Service Name</th>
+			<th>Service Type</th>
+			<th>Address</th>
+			<th>Country</th>
+			<th>Status</th>
+			<th>Click To</th>
+		</tr>
+		<tr wicket:id="serviceListView">
+			<td wicket:id="serviceIdLabel" />
+			<td wicket:id="serviceNameLabel" />
+			<td wicket:id="typeLabel" />
+			<td wicket:id="addressLabel" />
+			<td wicket:id="countryLabel" />
+			<td wicket:id="statusLabel" style="color:green;"/>
+			<td><a href="#" wicket:id="removeLink">Remove</a></td>
+		</tr>
+	</table>
+</wicket:panel>

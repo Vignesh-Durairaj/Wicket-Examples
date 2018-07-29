@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://org.apache.com">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Tags Page</title>
+</head>
+<body>
+	<h4><wicket:message key="page.header"></wicket:message></h4>
+	<hr />
+	<form wicket:id="tagForm">
+		<label wicket:for="sampleText">Enter any text here :</label>
+		<input type="text" wicket:id="sampleText"  wicket:message="value:text.value" /> <br />
+		<label wicket:for="testTextArea">A sample Button</label>
+		<textarea cols="10" rows="3"  wicket:id="testTextArea"></textarea><br />
+		
+		<wicket:enclosure child="enclosureText">
+			<label wicket:id="dynamicLabel"></label>
+			<input type="text" wicket:id="enclosureText" />	
+			<input type="button" wicket:id="popupButton" value="Show" />
+		</wicket:enclosure>
+		
+		<input type="Submit" value="click" wicket:id="hideButton" />
+	</form>
+</body>
+</html>

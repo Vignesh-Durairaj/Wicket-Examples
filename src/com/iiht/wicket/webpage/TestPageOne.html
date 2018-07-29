@@ -1,0 +1,57 @@
+<wicket:head>
+	<style>
+	
+		div.wicket-aa.container {
+			left: 10px;
+			top: 5px;
+		}
+		div.wicket-aa {
+			background-color:white;
+    		border:1px solid #CCCCCC;
+    		color:black;
+    		left: 2px;
+    		top: 5px;
+    		padding: 2px;
+            margin: 1px 0 0 0;
+            text-align:left;
+		}
+			
+		div.wicket-aa ul {
+		   list-style-image:none;
+		   list-style-position:outside;
+		   list-style-type:none;
+		   margin:0pt;
+		   padding:5px;
+		}
+		
+		div.wicket-aa ul li.selected {
+		    background-color:#6666CC;
+		    color:white;
+		}
+
+		
+	</style>
+	<title>Page One</title>
+</wicket:head>
+<wicket:extend>
+	This is a sample page One. Let us test a fragment.
+	
+	<ul>
+		<li wicket:id="fragmentList">
+			<span wicket:id="placeholderContainer" />
+		</li>
+	</ul>
+	
+	<wicket:fragment wicket:id="myFragment1">
+		<span style="background-color: lime;" wicket:id="elementOne" />
+	</wicket:fragment>
+	<wicket:fragment wicket:id="myFragment2">
+		<span style="background-color: aqua;" wicket:id="elementOne" />
+	</wicket:fragment>
+	<br /><hr />
+	<input type="text" wicket:id="autoCompleteText" width="30" />
+	<form wicket:id="paletteForm">
+		<span wicket:id="myPalette" /><br />
+		<a herf="#" wicket:id="submitLink">Click To Submit</a>
+		</form>
+</wicket:extend>

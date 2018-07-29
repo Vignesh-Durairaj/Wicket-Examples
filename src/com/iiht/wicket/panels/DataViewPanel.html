@@ -1,0 +1,28 @@
+<wicket:panel>
+	<h4>A sample Data View</h4>
+	<hr />
+	<table border = "1" wicket:id="dataViewContainer">
+		<tr>
+			<th>Service ID</th>
+			<th>Service Name</th>
+			<th>Service Type</th>
+			<th>Address</th>
+			<th>Country</th>
+			<th>Status</th>
+			<th>Click To</th>
+			<th>Click To</th>
+		</tr>
+		<tr wicket:id="telecomDataView">
+			<td wicket:id="serviceIdLabel" />
+			<td wicket:id="serviceNameLabel" />
+			<td wicket:id="typeLabel" />
+			<td wicket:id="addressLabel" />
+			<td wicket:id="countryLabel" />
+			<td wicket:id="statusLabel" style="color:green;"/>
+			<td><a href="#" wicket:id="deleteLink">Remove</a></td>
+			<td><a href="#" wicket:id="updateLink">Update</a></td>
+		</tr>
+	</table>
+	<br />
+	<input type="button" wicket:id="addButton" value="Add Row" />
+</wicket:panel>

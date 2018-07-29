@@ -1,0 +1,40 @@
+<wicket:panel>
+	<h4>This panel elaborates the Ajax based activities used</h4>
+	<hr />
+	<form wicket:id="ajaxForm">
+		<span wicket:id="errorPanel" />
+		<table>
+			<tr>
+				<td>Enter Service ID </td>
+				<td>
+					: <input type="text" wicket:id = "serviceIdText" />
+				</td>
+			</tr>
+			<tr>
+				<td>Enter Service Name </td>
+				<td>
+					: <input type="text" wicket:id = "serviceNameText" />
+				</td>
+			</tr>
+			<tr>
+				<td>Enter Country </td>
+				<td>
+					: <input type="text" wicket:id = "countryText" />
+				</td>
+			</tr>
+			<tr>
+				<td>Is Active </td>
+				<td>
+					: <span wicket:id="activeRadioChoices" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type = "submit" value = "Submit Here" wicket:id = "submitButton" /> &nbsp;
+					<input type="button" value = "Toggle Visibility" wicket:id = "toggleButton" />
+				</td>
+			</tr>
+		</table>
+		<label wicket:id="dynamicLabel" />
+	</form>
+</wicket:panel>

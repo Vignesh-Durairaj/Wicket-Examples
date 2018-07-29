@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://org.wicket.com">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Model Test Page</title>
+</head>
+<body>
+	This is to test the model objects used in the wicket architecture.
+	
+	<h4>Simple Plain Model</h4>
+	<hr />
+	<font color="green">
+		<table>
+			<tr>
+				<td>Service Provider ID : </td>
+				<td wicket:id="providerId"></td>
+			</tr>
+			<tr>
+				<td>Service Provider Name : </td>
+				<td wicket:id="providerName"></td>
+			</tr>
+			<tr>
+				<td>Service Type : </td>
+				<td wicket:id="serviceType"></td>
+			</tr>
+			<tr>
+				<td>Country : </td>
+				<td wicket:id="countryLabel"></td>
+			</tr>
+		</table>
+	</font>
+	
+	<h4>Property Model</h4>
+	<hr />
+	<font color="red">
+		<table>
+			<tr>
+				<td>Service Provider ID : </td>
+				<td wicket:id="propProviderId"></td>
+			</tr>
+			<tr>
+				<td>Service Provider Name : </td>
+				<td wicket:id="propProviderName"></td>
+			</tr>
+			<tr>
+				<td>Service Type : </td>
+				<td wicket:id="propServiceType"></td>
+			</tr>
+			<tr>
+				<td>Country : </td>
+				<td wicket:id="propCountryLabel"></td>
+			</tr>
+		</table>
+	</font>
+	
+	<h4>Compound Property Model</h4>
+	<hr />
+	<font color="blue">
+		<table wicket:id="cpContainer">
+			<tr>
+				<td>Service Provider ID : </td>
+				<td wicket:id="serviceId"></td>
+			</tr>
+			<tr>
+				<td>Service Provider Name : </td>
+				<td wicket:id="serviceName"></td>
+			</tr>
+			<tr>
+				<td>Service Type : </td>
+				<td wicket:id="type.typeName"></td>
+			</tr>
+			<tr>
+				<td>Country : </td>
+				<td wicket:id="country"></td>
+			</tr>
+		</table>
+	</font>
+	<br />
+	<h4>Resource Model</h4>
+	<hr />
+	<font color="magenta">
+		<span wicket:id="resourceLabel" />
+	</font>
+	<h4>Loadable Detachable Model</h4>
+	<hr />
+	<font color="orange">
+		<span wicket:id="ldLabel" />
+	</font>
+</body>
+</html>

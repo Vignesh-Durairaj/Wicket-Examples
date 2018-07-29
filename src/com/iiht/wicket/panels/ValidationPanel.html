@@ -1,0 +1,39 @@
+<wicket:panel>
+	<h4>A sample panel to test the validation available in the Wicket framework.</h4>
+	<hr>
+	<form wicket:id="validationForm">
+		<span wicket:id="feedbackPanel" style="color:red;" />
+		<table>
+			<tr>
+				<td>Enter a Integer Value <font color="red">*</font><br />[Default Validation Message] : </td>
+				<td>
+					<input type="text" wicket:id="mandatoryText" />
+				</td>
+			</tr>
+			<tr>
+				<td>Enter a Integer Value <font color="red">*</font><br />[Custom Validation Message] : </td>
+				<td>
+					<input type="text" wicket:id="customValidationText" />
+				</td>
+			</tr>
+			<tr>
+				<td>Enter a Value from 0 to 20<font color="red">*</font><br /> : </td>
+				<td>
+					<input type="text" wicket:id="outOfBoxText" />
+				</td>
+			</tr>
+			<tr>
+				<td>Enter a Date <font color="red">*</font> : </td>
+				<td>
+					<input type="text" wicket:id="dateText" readonly="readonly" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="submit" wicket:id="submitButton" />
+				</td>
+			</tr>
+		</table>
+		<font color="red">*</font> - Mandatory
+	</form>
+</wicket:panel>

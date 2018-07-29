@@ -1,0 +1,25 @@
+<wicket:panel>
+	<h3> A panel using a repeater view </h3>
+	<hr />
+	<table border="1" wicket:id="container">
+		<tr style="color:blue">
+			<th>Service ID</th>
+			<th>Provider Name</th>
+			<th>Service Type</th>
+			<th>Address</th>
+			<th>Country</th>
+			<th>Is Active</th>
+			<th>Click To</th>
+		</tr>
+		<tr wicket:id="serviceRepeaterView">
+			<td wicket:id=serviceId />
+			<td wicket:id=serviceName />
+			<td wicket:id=type.typeName />
+			<td wicket:id=address />
+			<td wicket:id=country />
+			<td wicket:id=activeStatus />
+			<td><a href="#" wicket:id="removeLink">Remove</a></td>
+		</tr>
+	</table>
+	<input type="button" wicket:id="addButton" value="add" />
+</wicket:panel>

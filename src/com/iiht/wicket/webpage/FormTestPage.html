@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:wicket="http://org.apache.com">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Sample Form</title>
+</head>
+<body>
+	<h4>Let us test the form components in Wicket.</h4>
+	<hr />
+	<form wicket:id="testForm">
+		<span wicket:id="feedbackPanel" />
+		<table>
+			<tr>
+				<td align="right">Enter a sample text here : </td>
+				<td>
+					<input type="text" wicket:id="sampleText" placeholder="Enter Your Name" />
+				</td>
+			</tr>
+			<tr>
+				<td align="right">Enter a sample password : </td>
+				<td>
+					<input type="password" wicket:id="passwordText" placeholder="Some Random Text" />
+					<input type="hidden" wicket:id="hiddenText">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">Select a type : </td>
+				<td>
+					<select wicket:id = "serviceDropDown" />
+				</td>
+			</tr>
+			<tr>
+				<td align="right">Is Active : </td>
+				<td>
+					<span wicket:id="activeRadioChoices" />
+				</td>
+			</tr>
+			<tr>
+				<td align="right">Support Available : </td>
+				<td>
+					<span wicket:id="supportRadioGroup">
+						<input type="radio" wicket:id="yesRadio"/>Yes
+						<input type="radio" wicket:id="noRadio" />No
+						<input type="radio" wicket:id="mayBeRadio" />May Be
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">Services Available : </td>
+				<td>
+					<input type="checkbox" wicket:id="telCheckBox"/>Telephonic
+					<input type="checkbox" wicket:id="mobileCheckBox" />Mobile Services
+					<input type="checkbox" wicket:id="interNetCheckBox" />Internet Services
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="Click Here" wicket:id="submitButton"/>
+					<a href="#" wicket:id="submitLink">Submit Data</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<br />
+	<span wicket:id="labelButtonPanel" />
+</body>
+</html>

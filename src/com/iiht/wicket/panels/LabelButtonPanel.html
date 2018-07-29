@@ -1,0 +1,23 @@
+<wicket:panel>
+	<h4 style="color: purple;">A sample panel to test submit Label Event.</h4>
+	<hr>
+	<form wicket:id="myForm">
+		<table>
+			<tr>
+				<td>Enter a String : </td>
+				<td>
+					<input type="text" wicket:id="myTextField" />
+				</td>
+			</tr>
+			<tr>
+				<td>The updated Value : </td>
+				<td wicket:id="myLabel" />
+			</tr>
+			<tr>
+				<td colspan="2">
+					<table border="2"><tr><th wicket:id="submitLabel" /></tr></table>
+				</td>
+			</tr>
+		</table>
+	</form>
+</wicket:panel>
